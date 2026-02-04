@@ -12,6 +12,7 @@ import (
 	"time"
 
 	"github.com/gopher-lab/gopher-client/client"
+	"github.com/joho/godotenv"
 	"github.com/masa-finance/tee-worker/v2/api/args/twitter"
 	"github.com/masa-finance/tee-worker/v2/api/types"
 )
@@ -24,6 +25,12 @@ const (
 )
 
 func main() {
+	// Load .env file explicitly to ensure environment variables are available
+	if err := godotenv.Load(); err != nil {
+		// Don't fail if .env doesn't exist, but log a warning
+		log.Printf("Warning: failed to load .env file: %v (continuing with environment variables)", err)
+	}
+
 	// Initialize gopher-client from .env file
 	c, err := client.NewClientFromConfig()
 	if err != nil {
@@ -40,6 +47,9 @@ func main() {
 	if baseQuery == "" {
 		baseQuery = defaultQuery
 		fmt.Printf("QUERY not set in .env, using default: %s\n", defaultQuery)
+	} else {
+		// Debug: verify quotes are preserved in the query
+		fmt.Printf("QUERY loaded from .env (quotes preserved for API): %s\n", baseQuery)
 	}
 
 	// Get amount from environment variable, fallback to default
@@ -67,9 +77,9 @@ func main() {
 	outputFile := generateOutputFilename(baseQuery, targetTweets)
 
 	fmt.Println("Starting tweet collection...")
-	fmt.Printf("Query: %s\n", baseQuery)
+	fmt.Printf("Query (for API, quotes preserved): %s\n", baseQuery)
 	fmt.Printf("Target: %d tweets\n", targetTweets)
-	fmt.Printf("Output file: %s\n", outputFile)
+	fmt.Printf("Output file (quotes removed from filename): %s\n", outputFile)
 	fmt.Printf("Batch size: %d tweets per request\n\n", maxResults)
 
 	// Initialize tweets array
@@ -168,10 +178,22 @@ func getLastTweetID(results []types.Document) (int64, error) {
 }
 
 // generateOutputFilename creates a filesystem-safe filename from the query and target count
+// Note: This function sanitizes the query for filename use, but the original query
+// (with quotes preserved) is still used for the actual API calls
+// Example: "bitcoin" min_faves:1000 -> bitcoin_min_faves:1000_10000.json
 func generateOutputFilename(query string, targetCount int) string {
 	// Sanitize the query for use in filename
-	// Replace spaces and special characters with underscores
-	sanitized := strings.ToLower(query)
+	// First, remove quotes (they're needed for the API query but not for filename)
+	sanitized := query
+
+	// Remove quotes (both single and double) - handle escaped quotes too
+	sanitized = strings.ReplaceAll(sanitized, `"`, "")
+	sanitized = strings.ReplaceAll(sanitized, `'`, "")
+	sanitized = strings.ReplaceAll(sanitized, `\"`, "")
+	sanitized = strings.ReplaceAll(sanitized, `\'`, "")
+
+	// Convert to lowercase for consistent filenames
+	sanitized = strings.ToLower(sanitized)
 
 	// Replace spaces with underscores
 	sanitized = strings.ReplaceAll(sanitized, " ", "_")
@@ -179,7 +201,7 @@ func generateOutputFilename(query string, targetCount int) string {
 	// Remove or replace special characters that aren't filesystem-safe
 	// Keep alphanumeric, underscores, and colons (for min_faves:1000 style queries)
 	reg := regexp.MustCompile(`[^a-z0-9_:]`)
-	sanitized = reg.ReplaceAllString(sanitized, "_")
+	sanitized = reg.ReplaceAllString(sanitized, "")
 
 	// Replace multiple consecutive underscores with a single one
 	reg = regexp.MustCompile(`_+`)
