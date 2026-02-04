@@ -17,7 +17,7 @@ import (
 )
 
 const (
-	defaultQuery  = "bitcoin min_faves:1000"
+	defaultQuery  = `"bitcoin" min_faves:1000`
 	defaultAmount = 10000
 	apiMaxResults = 100 // Maximum results per API request
 	dataDir       = "data"
