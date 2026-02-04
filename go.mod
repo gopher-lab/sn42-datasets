@@ -4,7 +4,7 @@ go 1.24.6
 
 require (
 	github.com/gopher-lab/gopher-client v0.0.2
-	github.com/masa-finance/tee-worker/v2 v2.0.1
+	github.com/masa-finance/tee-worker/v2 v2.2.1
 )
 
 require (
