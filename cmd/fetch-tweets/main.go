@@ -5,7 +5,10 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"path/filepath"
+	"regexp"
 	"strconv"
+	"strings"
 	"time"
 
 	"github.com/gopher-lab/gopher-client/client"
@@ -14,10 +17,10 @@ import (
 )
 
 const (
-	defaultQuery = "bitcoin min_faves:1000"
-	maxResults   = 100
-	targetTweets = 10000
-	outputFile   = "data/tweets_10000.json"
+	defaultQuery  = "bitcoin min_faves:1000"
+	defaultAmount = 10000
+	apiMaxResults = 100 // Maximum results per API request
+	dataDir       = "data"
 )
 
 func main() {
@@ -39,9 +42,34 @@ func main() {
 		fmt.Printf("QUERY not set in .env, using default: %s\n", defaultQuery)
 	}
 
+	// Get amount from environment variable, fallback to default
+	targetTweets := defaultAmount
+	if amountStr := os.Getenv("AMOUNT"); amountStr != "" {
+		amount, err := strconv.Atoi(amountStr)
+		if err != nil {
+			log.Fatalf("Invalid AMOUNT value in .env: %s (must be a number)", amountStr)
+		}
+		if amount <= 0 {
+			log.Fatalf("AMOUNT must be greater than 0, got: %d", amount)
+		}
+		targetTweets = amount
+	} else {
+		fmt.Printf("AMOUNT not set in .env, using default: %d\n", defaultAmount)
+	}
+
+	// Set maxResults: use AMOUNT if less than API max, otherwise use API max
+	maxResults := targetTweets
+	if maxResults > apiMaxResults {
+		maxResults = apiMaxResults
+	}
+
+	// Generate output filename from query and target count
+	outputFile := generateOutputFilename(baseQuery, targetTweets)
+
 	fmt.Println("Starting tweet collection...")
 	fmt.Printf("Query: %s\n", baseQuery)
 	fmt.Printf("Target: %d tweets\n", targetTweets)
+	fmt.Printf("Output file: %s\n", outputFile)
 	fmt.Printf("Batch size: %d tweets per request\n\n", maxResults)
 
 	// Initialize tweets array
@@ -93,7 +121,7 @@ func main() {
 
 	// Save to JSON file
 	fmt.Printf("\nSaving %d tweets to %s...\n", len(allTweets), outputFile)
-	if err := saveTweetsToFile(allTweets, baseQuery); err != nil {
+	if err := saveTweetsToFile(allTweets, baseQuery, outputFile); err != nil {
 		log.Fatalf("Failed to save tweets: %v", err)
 	}
 
@@ -139,8 +167,41 @@ func getLastTweetID(results []types.Document) (int64, error) {
 	return 0, fmt.Errorf("could not extract tweet_id from document")
 }
 
+// generateOutputFilename creates a filesystem-safe filename from the query and target count
+func generateOutputFilename(query string, targetCount int) string {
+	// Sanitize the query for use in filename
+	// Replace spaces and special characters with underscores
+	sanitized := strings.ToLower(query)
+
+	// Replace spaces with underscores
+	sanitized = strings.ReplaceAll(sanitized, " ", "_")
+
+	// Remove or replace special characters that aren't filesystem-safe
+	// Keep alphanumeric, underscores, and colons (for min_faves:1000 style queries)
+	reg := regexp.MustCompile(`[^a-z0-9_:]`)
+	sanitized = reg.ReplaceAllString(sanitized, "_")
+
+	// Replace multiple consecutive underscores with a single one
+	reg = regexp.MustCompile(`_+`)
+	sanitized = reg.ReplaceAllString(sanitized, "_")
+
+	// Remove leading/trailing underscores
+	sanitized = strings.Trim(sanitized, "_")
+
+	// Create filename: query_targetCount.json
+	filename := fmt.Sprintf("%s_%d.json", sanitized, targetCount)
+
+	// Ensure data directory exists
+	if err := os.MkdirAll(dataDir, 0755); err != nil {
+		log.Printf("Warning: failed to create data directory: %v", err)
+	}
+
+	// Return full path
+	return filepath.Join(dataDir, filename)
+}
+
 // saveTweetsToFile saves the tweets to a JSON file with proper formatting
-func saveTweetsToFile(tweets []types.Document, query string) error {
+func saveTweetsToFile(tweets []types.Document, query string, filename string) error {
 	// Create output structure with metadata
 	output := struct {
 		TotalTweets int              `json:"total_tweets"`
@@ -161,7 +222,7 @@ func saveTweetsToFile(tweets []types.Document, query string) error {
 	}
 
 	// Write to file
-	if err := os.WriteFile(outputFile, data, 0644); err != nil {
+	if err := os.WriteFile(filename, data, 0644); err != nil {
 		return fmt.Errorf("failed to write file: %w", err)
 	}
 
