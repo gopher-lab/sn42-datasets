@@ -25,11 +25,13 @@ A Go script that fetches large batches of tweets from the Gopher AI subnet API u
 2. **Create a `.env` file in the root directory:**
    ```bash
    GOPHER_CLIENT_TOKEN=your_api_token_here
+   QUERY="bitcoin min_faves:1000"
    ```
 
-   The script will automatically load this file. You can also set the token as an environment variable:
+   The script will automatically load this file. You can also set these as environment variables:
    ```bash
    export GOPHER_CLIENT_TOKEN=your_api_token_here
+   export QUERY="bitcoin min_faves:1000"
    ```
 
 3. **Install dependencies:**
@@ -41,33 +43,37 @@ A Go script that fetches large batches of tweets from the Gopher AI subnet API u
 
 ### Basic Usage
 
-Run the script to fetch 10,000 tweets matching the default query:
+Run the script to fetch 10,000 tweets matching your query:
 
 ```bash
 go run ./cmd/fetch-tweets
 ```
 
-The default query is: `bitcoin min_faves:1000`
+The query is read from the `QUERY` environment variable in your `.env` file. If not set, it defaults to: `bitcoin min_faves:1000`
 
 ### Customization
 
+#### Custom Query
+
+Set the `QUERY` environment variable in your `.env` file:
+
+```bash
+QUERY="ethereum min_faves:500"
+```
+
+Or set it as an environment variable:
+```bash
+export QUERY="ethereum min_faves:500"
+go run ./cmd/fetch-tweets
+```
+
+#### Other Configuration
+
 You can modify the script constants in `cmd/fetch-tweets/main.go`:
 
-- `baseQuery`: The search query (default: `"bitcoin min_faves:1000"`)
 - `maxResults`: Number of tweets per API request (default: `100`, max: `1000`)
 - `targetTweets`: Total number of tweets to collect (default: `10000`)
 - `outputFile`: Output JSON file path (default: `"data/tweets_10000.json"`)
-
-### Example: Custom Query
-
-To fetch tweets with a different query, modify the `baseQuery` constant:
-
-```go
-const (
-    baseQuery = "ethereum min_faves:500"  // Your custom query
-    // ... other constants
-)
-```
 
 ## Output
 
@@ -106,8 +112,8 @@ The script generates a JSON file in the `data/` directory with the following str
 ### Pagination Logic
 
 The script uses Twitter's `max_id` parameter for pagination:
-- First request: `bitcoin min_faves:1000`
-- Subsequent requests: `bitcoin min_faves:1000 max_id:{last_tweet_id}`
+- First request: Uses your `QUERY` as-is (e.g., `bitcoin min_faves:1000`)
+- Subsequent requests: Appends `max_id:{last_tweet_id}` to your query (e.g., `bitcoin min_faves:1000 max_id:1234567890`)
 
 This ensures you get older tweets in chronological order.
 
@@ -116,8 +122,16 @@ This ensures you get older tweets in chronological order.
 The script uses the following environment variables (loaded from `.env` file):
 
 - `GOPHER_CLIENT_TOKEN`: Your Gopher AI API token (required)
+- `QUERY`: Twitter search query (optional, defaults to `"bitcoin min_faves:1000"`)
 - `GOPHER_CLIENT_URL`: API base URL (optional, defaults to `https://data.gopher-ai.com/api`)
 - `GOPHER_CLIENT_TIMEOUT`: Request timeout (optional, defaults to `60s`)
+
+### Query Examples
+
+- `QUERY="bitcoin min_faves:1000"` - Bitcoin tweets with at least 1000 likes
+- `QUERY="ethereum min_retweets:50"` - Ethereum tweets with at least 50 retweets
+- `QUERY="crypto -filter:retweets"` - Crypto tweets excluding retweets
+- `QUERY="from:elonmusk"` - All tweets from a specific user
 
 ## Error Handling
 
@@ -139,9 +153,14 @@ If an error occurs, the script will log it and exit gracefully.
 
 ### "Failed to create client from config"
 
-- Ensure your `.env` file exists in the `sn42/` directory
+- Ensure your `.env` file exists in the `sn42-datasets/` directory
 - Check that `GOPHER_CLIENT_TOKEN` is set correctly
 - Verify there are no extra spaces or quotes around the token value
+
+### "QUERY not set in .env, using default"
+
+- This is informational only - the script will use the default query
+- To use a custom query, add `QUERY="your query here"` to your `.env` file
 
 ### "No more results available"
 

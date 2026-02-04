@@ -14,7 +14,7 @@ import (
 )
 
 const (
-	baseQuery    = "bitcoin min_faves:1000"
+	defaultQuery = "bitcoin min_faves:1000"
 	maxResults   = 100
 	targetTweets = 10000
 	outputFile   = "data/tweets_10000.json"
@@ -32,7 +32,15 @@ func main() {
 		log.Fatal("GOPHER_CLIENT_TOKEN is not set. Please set it in your .env file")
 	}
 
+	// Get query from environment variable, fallback to default
+	baseQuery := os.Getenv("QUERY")
+	if baseQuery == "" {
+		baseQuery = defaultQuery
+		fmt.Printf("QUERY not set in .env, using default: %s\n", defaultQuery)
+	}
+
 	fmt.Println("Starting tweet collection...")
+	fmt.Printf("Query: %s\n", baseQuery)
 	fmt.Printf("Target: %d tweets\n", targetTweets)
 	fmt.Printf("Batch size: %d tweets per request\n\n", maxResults)
 
@@ -85,7 +93,7 @@ func main() {
 
 	// Save to JSON file
 	fmt.Printf("\nSaving %d tweets to %s...\n", len(allTweets), outputFile)
-	if err := saveTweetsToFile(allTweets); err != nil {
+	if err := saveTweetsToFile(allTweets, baseQuery); err != nil {
 		log.Fatalf("Failed to save tweets: %v", err)
 	}
 
@@ -132,7 +140,7 @@ func getLastTweetID(results []types.Document) (int64, error) {
 }
 
 // saveTweetsToFile saves the tweets to a JSON file with proper formatting
-func saveTweetsToFile(tweets []types.Document) error {
+func saveTweetsToFile(tweets []types.Document, query string) error {
 	// Create output structure with metadata
 	output := struct {
 		TotalTweets int              `json:"total_tweets"`
@@ -141,7 +149,7 @@ func saveTweetsToFile(tweets []types.Document) error {
 		Tweets      []types.Document `json:"tweets"`
 	}{
 		TotalTweets: len(tweets),
-		Query:       baseQuery,
+		Query:       query,
 		CollectedAt: time.Now().UTC().Format(time.RFC3339),
 		Tweets:      tweets,
 	}
