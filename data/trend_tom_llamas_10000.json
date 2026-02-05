@@ -1,0 +1,1016 @@
+{
+  "total_tweets": 42,
+  "trend": "Tom Llamas",
+  "query": "\"Tom Llamas\" min_faves:100",
+  "collected_at": "2026-02-05T02:13:11Z",
+  "tweets": [
+    {
+      "id": "2019130469925998756",
+      "source": "twitter",
+      "content": "NBC's Tom Llamas: \"After our interview, off-camera, the President called Savannah Guthrie and spoke to her — offering words of support for her and her family as they search for their mother.\" ❤️ https://pbs.twimg.com/amplify_video_thumb/2019130115506987008/img/vvA-iT-uX1AqTtyU.jpg",
+      "metadata": {
+        "conversation_id": "2019130469925998756",
+        "created_at": "2026-02-04T19:26:32Z",
+        "lang": "",
+        "likes": 2011,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 48800,
+          "like_count": 2011,
+          "quote_count": 0,
+          "reply_count": 46,
+          "retweet_count": 364
+        },
+        "tweet_id": 2019130469925998800,
+        "user_id": "1881451105454002176",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "2018894914965377281",
+      "source": "twitter",
+      "content": "U.S. President Donald Trump will sit down for an interview with NBC Nightly News anchor Tom Llamas, with a portion of it set to air as part of the network’s Super Bowl pregame coverage Sunday. - Deadline https://pbs.twimg.com/media/HASOOeJX0AAV3Sw.jpg",
+      "metadata": {
+        "conversation_id": "2018894914965377281",
+        "created_at": "2026-02-04T03:50:31Z",
+        "lang": "",
+        "likes": 382,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 38560,
+          "like_count": 382,
+          "quote_count": 0,
+          "reply_count": 32,
+          "retweet_count": 31
+        },
+        "tweet_id": 2018894914965377300,
+        "user_id": "1212783083272855552",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "2018475473056280978",
+      "source": "twitter",
+      "content": "Tom Llamas: \"We begin tonight with a story that hits too close to home for our newsroom...\" https://pbs.twimg.com/media/HAMQvavXAAAd0le.jpg",
+      "metadata": {
+        "conversation_id": "2018475473056280978",
+        "created_at": "2026-02-03T00:03:48Z",
+        "lang": "",
+        "likes": 367,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 21074,
+          "like_count": 367,
+          "quote_count": 0,
+          "reply_count": 7,
+          "retweet_count": 32
+        },
+        "tweet_id": 2018475473056281000,
+        "user_id": "14515799",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "2012929224902856829",
+      "source": "twitter",
+      "content": "Did you know that @NBCNightlyNews Anchor Tom Llamas is a die hard @CanesFootball fan?\n\nHe details to @NicoleAuerbach \u0026amp; @RoyPhilpott  his ties to Miami \u0026amp; their incredible run to the #CFBPlayoff National Championship Game.\n\n#ItsAllAboutTheU | #GoCanes https://pbs.twimg.com/amplify_video_thumb/2012627417353920512/img/T33bNdCWYHIXAz0n.jpg",
+      "metadata": {
+        "conversation_id": "2012929224902856829",
+        "created_at": "2026-01-18T16:45:00Z",
+        "lang": "",
+        "likes": 196,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 10627,
+          "like_count": 196,
+          "quote_count": 0,
+          "reply_count": 2,
+          "retweet_count": 37
+        },
+        "tweet_id": 2012929224902856700,
+        "user_id": "183303019",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "2012316154149105924",
+      "source": "twitter",
+      "content": "Every evening on NBC Nightly News, Tom Llamas says there’s good news tonight and I always hope it’s that Trump has fallen into an open sewer and could not be rescued.\nThus far, no dice. 😢",
+      "metadata": {
+        "conversation_id": "2012316154149105924",
+        "created_at": "2026-01-17T00:08:52Z",
+        "lang": "",
+        "likes": 391,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 28315,
+          "like_count": 391,
+          "quote_count": 0,
+          "reply_count": 187,
+          "retweet_count": 12
+        },
+        "tweet_id": 2012316154149106000,
+        "user_id": "65137552",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1976480934594486536",
+      "source": "twitter",
+      "content": "Wrong phrasing: NBC anchor Tom Llamas notes “Trump’s public calls to prosecute those who he BELIEVES investigated him for political reasons.” \n\nTish James (D) ran for office on a promise to Get Trump. So she investigated him for political reasons! https://pbs.twimg.com/amplify_video_thumb/1976480898393530368/img/3pnqQbwZw6uEhm-K.jpg",
+      "metadata": {
+        "conversation_id": "1976480934594486536",
+        "created_at": "2025-10-10T02:52:30Z",
+        "lang": "",
+        "likes": 580,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 76139,
+          "like_count": 580,
+          "quote_count": 0,
+          "reply_count": 17,
+          "retweet_count": 73
+        },
+        "tweet_id": 1976480934594486500,
+        "user_id": "22033805",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1965956243354431868",
+      "source": "twitter",
+      "content": "Tom Llamas signed off @NBCNightlyNews today by saying:\n\n\"In this country, we have the right to debate, to say and to express how we feel without violence. We can be bold, we can be brave, we can also be tolerant. THAT is America.\"",
+      "metadata": {
+        "conversation_id": "1965956243354431868",
+        "created_at": "2025-09-11T01:51:08Z",
+        "lang": "",
+        "likes": 189,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 23878,
+          "like_count": 189,
+          "quote_count": 0,
+          "reply_count": 48,
+          "retweet_count": 35
+        },
+        "tweet_id": 1965956243354431700,
+        "user_id": "14515799",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1961191381395030328",
+      "source": "twitter",
+      "content": "Bad Bunny with Tom Llamas in an exclusive interview for Nightly News, available tonight. 🖤 https://pbs.twimg.com/ext_tw_video_thumb/1961191322066227200/pu/img/ObnzR9CFINdwcIiJ.jpg",
+      "metadata": {
+        "conversation_id": "1961191381395030328",
+        "created_at": "2025-08-28T22:17:17Z",
+        "lang": "",
+        "likes": 440,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 11753,
+          "like_count": 440,
+          "quote_count": 0,
+          "reply_count": 1,
+          "retweet_count": 27
+        },
+        "tweet_id": 1961191381395030300,
+        "user_id": "1270504690640355333",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1930096141359513775",
+      "source": "twitter",
+      "content": "Tom Llamas is taking the helm of NBC Nightly News. Given recent events with ABC and CBS, I asked Llamas if NBC will do reporting critical of President Trump and whether NBC's parent company will stand by it. https://pbs.twimg.com/amplify_video_thumb/1930096035482697730/img/Ww1QjKV082kGmatR.jpg",
+      "metadata": {
+        "conversation_id": "1930096141359513775",
+        "created_at": "2025-06-04T02:55:54Z",
+        "lang": "",
+        "likes": 793,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 144080,
+          "like_count": 793,
+          "quote_count": 0,
+          "reply_count": 76,
+          "retweet_count": 152
+        },
+        "tweet_id": 1930096141359513900,
+        "user_id": "15614141",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1929675022073057736",
+      "source": "twitter",
+      "content": "Tom Llamas ends @NBCNightlyNews by noting it's his first night anchoring. \"My thanks to all of you as we start this new adventure together. Tonight, and always, we're here for you.\" https://pbs.twimg.com/media/GseVNIKXYAA5-cT.jpg",
+      "metadata": {
+        "conversation_id": "1929675022073057736",
+        "created_at": "2025-06-02T23:02:31Z",
+        "lang": "",
+        "likes": 217,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 37957,
+          "like_count": 217,
+          "quote_count": 0,
+          "reply_count": 27,
+          "retweet_count": 23
+        },
+        "tweet_id": 1929675022073057800,
+        "user_id": "14515799",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1928982707775656375",
+      "source": "twitter",
+      "content": "Tom Llamas to begin new era as NBC Nightly News anchor @LlamasNBC  https://www.nbcnews.com/nightly-news/video/tom-llamas-to-begin-new-era-as-nbc-nightly-news-anchor-240664645783 via @nbcnews",
+      "metadata": {
+        "conversation_id": "1928982707775656375",
+        "created_at": "2025-06-01T01:11:30Z",
+        "lang": "",
+        "likes": 190,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 3382,
+          "like_count": 190,
+          "quote_count": 0,
+          "reply_count": 8,
+          "retweet_count": 22
+        },
+        "tweet_id": 1928982707775656400,
+        "user_id": "49733381",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1897659602428121465",
+      "source": "twitter",
+      "content": "Congrats, @llamasnbc!  https://www.today.com/video/tom-llamas-announced-as-lester-holt-s-successor-on-nightly-news-233632837646?taid=67c9b4d84560ab000171e6f7\u0026utm_campaign=trueAnthem_manual\u0026utm_medium=trueAnthem\u0026utm_source=twitter",
+      "metadata": {
+        "conversation_id": "1897659602428121465",
+        "created_at": "2025-03-06T14:44:40Z",
+        "lang": "",
+        "likes": 439,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 29216,
+          "like_count": 439,
+          "quote_count": 0,
+          "reply_count": 66,
+          "retweet_count": 44
+        },
+        "tweet_id": 1897659602428121300,
+        "user_id": "7744592",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1897377195011534906",
+      "source": "twitter",
+      "content": "Tom Llamas will take over as anchor and managing editor of “NBC Nightly News” after Lester Holt steps down this summer. https://www.today.com/news/tom-llamas-will-succeed-lester-holt-anchor-nbc-nightly-news-rcna194981?taid=67c8add50009f90001365db9\u0026utm_campaign=trueAnthem_manual\u0026utm_medium=trueAnthem\u0026utm_source=twitter",
+      "metadata": {
+        "conversation_id": "1897377195011534906",
+        "created_at": "2025-03-05T20:02:29Z",
+        "lang": "",
+        "likes": 487,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 39246,
+          "like_count": 487,
+          "quote_count": 0,
+          "reply_count": 19,
+          "retweet_count": 57
+        },
+        "tweet_id": 1897377195011534800,
+        "user_id": "7744592",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1878483469329949045",
+      "source": "twitter",
+      "content": "Tom Llamas speaks with actress Jennifer Garner, who, alongside Chef José Andrés, is working tirelessly to provide aid to wildfire-affected communities in Los Angeles and support firefighters battling the flames. 🙏🔥❤️ https://pbs.twimg.com/ext_tw_video_thumb/1878483401373822977/pu/img/H8A9NRelvUyR8MTJ.jpg",
+      "metadata": {
+        "conversation_id": "1878483469329949045",
+        "created_at": "2025-01-12T16:45:34Z",
+        "lang": "",
+        "likes": 443,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 32727,
+          "like_count": 443,
+          "quote_count": 0,
+          "reply_count": 7,
+          "retweet_count": 48
+        },
+        "tweet_id": 1878483469329949000,
+        "user_id": "1689693400881414144",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1877899713372188954",
+      "source": "twitter",
+      "content": "🚨‼️Jennifer Garner and Chef José Andrés Unite to Support LA Wildfire Relief\n\nNBC News’ Tom Llamas spoke with actress Jennifer Garner, who has partnered with Chef José Andrés to provide critical aid to Los Angeles communities impacted by the devastating wildfires. Together, they https://pbs.twimg.com/ext_tw_video_thumb/1877899662407143424/pu/img/Awt7szkwXFitw3ep.jpg",
+      "metadata": {
+        "conversation_id": "1877899713372188954",
+        "created_at": "2025-01-11T02:05:56Z",
+        "lang": "",
+        "likes": 1846,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 235080,
+          "like_count": 1846,
+          "quote_count": 0,
+          "reply_count": 80,
+          "retweet_count": 217
+        },
+        "tweet_id": 1877899713372189000,
+        "user_id": "74839195",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1853930645472338103",
+      "source": "twitter",
+      "content": "i only have streaming so i’m watching nbc with tom llamas and hallie jackson\n\nwhat are you watching?",
+      "metadata": {
+        "conversation_id": "1853930645472338103",
+        "created_at": "2024-11-05T22:41:24Z",
+        "lang": "",
+        "likes": 205,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 11747,
+          "like_count": 205,
+          "quote_count": 0,
+          "reply_count": 154,
+          "retweet_count": 8
+        },
+        "tweet_id": 1853930645472338200,
+        "user_id": "3911216058",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1812598912126992529",
+      "source": "twitter",
+      "content": "A homeowner in the area around Trump's rally described it as a \"free for all\" with \"no security.\" NBC's Tom Llamas reports. https://pbs.twimg.com/media/GSelGhFW8AEMPsZ.jpg",
+      "metadata": {
+        "conversation_id": "1812598912126992529",
+        "created_at": "2024-07-14T21:23:51Z",
+        "lang": "",
+        "likes": 384,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 111800,
+          "like_count": 384,
+          "quote_count": 0,
+          "reply_count": 154,
+          "retweet_count": 153
+        },
+        "tweet_id": 1812598912126992600,
+        "user_id": "2836421",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1713363638587625839",
+      "source": "twitter",
+      "content": "The tentative agreement to allow Americans in Gaza safe passage through the Rafah border crossing continues to face significant obstacles to implementation, U.S. officials tell NBC News.  Tom Llamas reports. https://pbs.twimg.com/media/F8cXJYaXgAAVIhk.jpg",
+      "metadata": {
+        "conversation_id": "1713363638587625839",
+        "created_at": "2023-10-15T01:18:18Z",
+        "lang": "",
+        "likes": 224,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 98179,
+          "like_count": 224,
+          "quote_count": 0,
+          "reply_count": 288,
+          "retweet_count": 71
+        },
+        "tweet_id": 1713363638587625700,
+        "user_id": "2836421",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1498446512463904768",
+      "source": "twitter",
+      "content": "On NBC NEWS NOW. (Streaming) Monday. 28 Feb. 7 pm ET. TOM LLAMAS. Ukraine waits for the big attack on Kiev.",
+      "metadata": {
+        "conversation_id": "1498446512463904768",
+        "created_at": "2022-02-28T23:54:23Z",
+        "lang": "",
+        "likes": 133,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 0,
+          "like_count": 133,
+          "quote_count": 0,
+          "reply_count": 19,
+          "retweet_count": 17
+        },
+        "tweet_id": 1498446512463904800,
+        "user_id": "858466264875900929",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1431359848978030594",
+      "source": "twitter",
+      "content": "After that RIDICULOUS interview with the KILLER of Ashli Babbitt, I'm reminded of the time Lester INTERRUPTED Trump to \"fact check\" him on Stop and Frisk.  Lester was 100 % WRONG and TRUMP WAS TOTALLY CORRECT. Lester is a Fake News Hall of Famer. When is TOM LLAMAS taking over ? https://pbs.twimg.com/media/E902Md_XEAE5UXW.jpg",
+      "metadata": {
+        "conversation_id": "1431359848978030594",
+        "created_at": "2021-08-27T20:55:56Z",
+        "lang": "",
+        "likes": 968,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 0,
+          "like_count": 968,
+          "quote_count": 0,
+          "reply_count": 57,
+          "retweet_count": 220
+        },
+        "tweet_id": 1431359848978030600,
+        "user_id": "44385628",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1420082716167622658",
+      "source": "twitter",
+      "content": "news about news: I'm launching a new daily primetime show this fall on @NBCNewsNow! Psyched to finally be able to share the announcement, and a shoutout to the other new live shows from rockstars @LlamasNBC \u0026amp; @NBCJoshua \n\nhttps://deadline.com/2021/07/nbcuniversal-news-group-expands-streaming-tom-llamas-hallie-jackson-joshua-johnson-1234800533/",
+      "metadata": {
+        "conversation_id": "1420082716167622658",
+        "created_at": "2021-07-27T18:04:38Z",
+        "lang": "",
+        "likes": 378,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 0,
+          "like_count": 378,
+          "quote_count": 0,
+          "reply_count": 67,
+          "retweet_count": 21
+        },
+        "tweet_id": 1420082716167622700,
+        "user_id": "37590426",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1420000272408055825",
+      "source": "twitter",
+      "content": "🚨 Exclusive: NBC News is adding more than *200* jobs as part of major streaming push\n— Tom Llamas, Hallie Jackson, Joshua Johnson will have new shows\n— International distribution for NBC News NOW coming later this year\nMore on @Axios: \nhttps://www.axios.com/exclusive-nbc-news-adding-200-jobs-as-part-of-major-streaming-push-e59ae042-6a79-4412-adf9-292b2f0917d3.html",
+      "metadata": {
+        "conversation_id": "1420000272408055825",
+        "created_at": "2021-07-27T12:37:01Z",
+        "lang": "",
+        "likes": 170,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 0,
+          "like_count": 170,
+          "quote_count": 0,
+          "reply_count": 7,
+          "retweet_count": 70
+        },
+        "tweet_id": 1420000272408055800,
+        "user_id": "205965649",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1386640446366040068",
+      "source": "twitter",
+      "content": "JUST ANNOUNCED: Tom Llamas will return to @NBCNews on May 3 as a senior national correspondent. \n\nHe will also anchor a new primetime newscast on @NBCNewsNow beginning this summer. \n\nhttp://press.nbcnews.com/2021/04/26/tom-llamas-returns-to-nbc-news-will-anchor-new-primetime-streaming-news-program-on-nbc-news-now/",
+      "metadata": {
+        "conversation_id": "1386640446366040068",
+        "created_at": "2021-04-26T11:16:59Z",
+        "lang": "",
+        "likes": 243,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 0,
+          "like_count": 243,
+          "quote_count": 0,
+          "reply_count": 12,
+          "retweet_count": 33
+        },
+        "tweet_id": 1386640446366040000,
+        "user_id": "102480261",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1375052322695479301",
+      "source": "twitter",
+      "content": "I’ve been mistaken for Tom Llamas and Cefaan Kim, but today was a new one. Somebody called me @joetorresABC7. I said I was flattered. 😄",
+      "metadata": {
+        "conversation_id": "1375052322695479301",
+        "created_at": "2021-03-25T11:49:55Z",
+        "lang": "",
+        "likes": 149,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 0,
+          "like_count": 149,
+          "quote_count": 0,
+          "reply_count": 10,
+          "retweet_count": 5
+        },
+        "tweet_id": 1375052322695479300,
+        "user_id": "144031017",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1324741292824342529",
+      "source": "twitter",
+      "content": "Since we’re all glued to the TV right now can we just talk about how Tom Llamas, Gio Benitez, and David Muir can like... GET it 😏 https://pbs.twimg.com/media/EmJtLveXEAAAKaY.jpg",
+      "metadata": {
+        "conversation_id": "1324741292824342529",
+        "created_at": "2020-11-06T15:51:51Z",
+        "lang": "",
+        "likes": 151,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 0,
+          "like_count": 151,
+          "quote_count": 0,
+          "reply_count": 3,
+          "retweet_count": 9
+        },
+        "tweet_id": 1324741292824342500,
+        "user_id": "2945618664",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1302573396748894208",
+      "source": "twitter",
+      "content": "Names mentioned in the article but there are so many others: Jose Diaz-Balart , Tom Llamas and Cecilia Vega, Lulu Garcia-Navarro and Ed O’Keefe...I add @AnaCabrera @jorgeramosnews . I mean there is NO LACK of Latinos who could do this.",
+      "metadata": {
+        "conversation_id": "1302571132676120576",
+        "created_at": "2020-09-06T11:44:33Z",
+        "lang": "",
+        "likes": 158,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 0,
+          "like_count": 158,
+          "quote_count": 0,
+          "reply_count": 4,
+          "retweet_count": 7
+        },
+        "tweet_id": 1302573396748894200,
+        "user_id": "250211424",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1141724852950315009",
+      "source": "twitter",
+      "content": "ABC reports on troubling questions regarding Hunter Biden’s foreign business dealings while his father, Joe Biden, was VP. \n\nTom Llamas raises the question: “Was Hunter Biden profiting off his dad’s work as vice president and did Joe Biden allow it?” https://pbs.twimg.com/amplify_video_thumb/1141717240045330432/img/0Z7wUoDPYNUoadrW.jpg",
+      "metadata": {
+        "conversation_id": "1141724852950315009",
+        "created_at": "2019-06-20T15:09:51Z",
+        "lang": "",
+        "likes": 7325,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 0,
+          "like_count": 7325,
+          "quote_count": 0,
+          "reply_count": 1317,
+          "retweet_count": 3167
+        },
+        "tweet_id": 1141724852950315000,
+        "user_id": "341194704",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1100493760918622209",
+      "source": "twitter",
+      "content": "#PENDIENTE🗣️ | Esta noche a partir de las 9:00 pm, no te pierdas la entrevista del presidente @NicolasMaduro con el periodista Tom Llamas de la radio televisora española ABC\n\n#PueblosRespaldanAVenezuela https://pbs.twimg.com/ext_tw_video_thumb/1100492346460905472/pu/img/oPpNm9qc1hAuVCXV.jpg",
+      "metadata": {
+        "conversation_id": "1100493760918622209",
+        "created_at": "2019-02-26T20:32:13Z",
+        "lang": "",
+        "likes": 211,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 0,
+          "like_count": 211,
+          "quote_count": 0,
+          "reply_count": 42,
+          "retweet_count": 347
+        },
+        "tweet_id": 1100493760918622200,
+        "user_id": "118864905",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1100470704724688898",
+      "source": "twitter",
+      "content": "#ATENCIÓN | No te pierdas la entrevista realizada por el periodista Tom Llamas de ABC News al presidente @NicolasMaduro ¡La cita es esta noche por @VTVcanal8 a las 9:00 p.m.! #LaVictoriaNosPertenece #PueblosRespaldanAVenezuela #26Feb https://pbs.twimg.com/ext_tw_video_thumb/1100470307419312128/pu/img/eU5LDuG9RJgMLWxU.jpg",
+      "metadata": {
+        "conversation_id": "1100470704724688898",
+        "created_at": "2019-02-26T19:00:36Z",
+        "lang": "",
+        "likes": 271,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 0,
+          "like_count": 271,
+          "quote_count": 0,
+          "reply_count": 19,
+          "retweet_count": 414
+        },
+        "tweet_id": 1100470704724688900,
+        "user_id": "814613151392157698",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1100467090513907712",
+      "source": "twitter",
+      "content": "#ATENCIÓN | No te pierdas la entrevista realizada por el periodista Tom Llamas de ABC News al presidente @NicolasMaduro ¡La cita es esta noche por VTV a las 9:00 p.m.! https://pbs.twimg.com/ext_tw_video_thumb/1100466415574966272/pu/img/Vrt9Icnt69UuQTHa.jpg",
+      "metadata": {
+        "conversation_id": "1100467090513907712",
+        "created_at": "2019-02-26T18:46:14Z",
+        "lang": "",
+        "likes": 263,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 0,
+          "like_count": 263,
+          "quote_count": 0,
+          "reply_count": 151,
+          "retweet_count": 394
+        },
+        "tweet_id": 1100467090513907700,
+        "user_id": "138901003",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1048047674941947904",
+      "source": "twitter",
+      "content": "ABC's Tom Llamas will interview First Lady Melania Trump for a '20/20' special that will air next week. http://apne.ws/iao4qoE",
+      "metadata": {
+        "conversation_id": "1048047674941947904",
+        "created_at": "2018-10-05T03:10:12Z",
+        "lang": "",
+        "likes": 167,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 0,
+          "like_count": 167,
+          "quote_count": 0,
+          "reply_count": 262,
+          "retweet_count": 38
+        },
+        "tweet_id": 1048047674941947900,
+        "user_id": "51241574",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "803059752775380993",
+      "source": "twitter",
+      "content": "Real talk. http://trib.al/Wsi2lxY",
+      "metadata": {
+        "conversation_id": "803059752775380993",
+        "created_at": "2016-11-28T02:15:39Z",
+        "lang": "",
+        "likes": 230,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 0,
+          "like_count": 230,
+          "quote_count": 0,
+          "reply_count": 14,
+          "retweet_count": 112
+        },
+        "tweet_id": 803059752775381000,
+        "user_id": "457984599",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "802944878795784192",
+      "source": "twitter",
+      "content": "Thank u, @TomLlamasABC for sharing your story, speaking the truth-Tom Llamas on How Fidel Castro's Death Impacts Him http://abcnews.go.com/GMA/video/abc-news-tom-llamas-fidel-castros-death-impacts-43792469",
+      "metadata": {
+        "conversation_id": "802944878795784192",
+        "created_at": "2016-11-27T18:39:11Z",
+        "lang": "",
+        "likes": 271,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 0,
+          "like_count": 271,
+          "quote_count": 0,
+          "reply_count": 20,
+          "retweet_count": 70
+        },
+        "tweet_id": 802944878795784200,
+        "user_id": "19568591",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "802942522989350913",
+      "source": "twitter",
+      "content": "Real talk. http://trib.al/OvaGloJ",
+      "metadata": {
+        "conversation_id": "802942522989350913",
+        "created_at": "2016-11-27T18:29:50Z",
+        "lang": "",
+        "likes": 186,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 0,
+          "like_count": 186,
+          "quote_count": 0,
+          "reply_count": 14,
+          "retweet_count": 83
+        },
+        "tweet_id": 802942522989350900,
+        "user_id": "457984599",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "802577929825755136",
+      "source": "twitter",
+      "content": "WATCH: \" Fidel Castro... was a tyrant. He was a killer. He was a liar.\" - @TomLlamasABC, whose parents fled Cuba. http://snpy.tv/2gsdPUm",
+      "metadata": {
+        "conversation_id": "802577929825755136",
+        "created_at": "2016-11-26T18:21:04Z",
+        "lang": "",
+        "likes": 1631,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 0,
+          "like_count": 1631,
+          "quote_count": 0,
+          "reply_count": 92,
+          "retweet_count": 1018
+        },
+        "tweet_id": 802577929825755100,
+        "user_id": "22650211",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "802559214111465472",
+      "source": "twitter",
+      "content": ".@TomLlamasABC to @GMA: Fidel Castro \"was a tyrant, he was a killer, he was a liar\" http://abcn.ws/2fkSdgV http://snpy.tv/2gsdPUm",
+      "metadata": {
+        "conversation_id": "802559214111465472",
+        "created_at": "2016-11-26T17:06:42Z",
+        "lang": "",
+        "likes": 552,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 0,
+          "like_count": 552,
+          "quote_count": 0,
+          "reply_count": 88,
+          "retweet_count": 407
+        },
+        "tweet_id": 802559214111465500,
+        "user_id": "28785486",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "737782761793060864",
+      "source": "twitter",
+      "content": "@realDonaldTrump calls ABC Tom Llamas a SLEAZE! A star is born! 😂😂😂😂😂😂Trump calling out incompetence is REFRESHING! https://pbs.twimg.com/media/Cj0hfgGUoAA9ydn.jpg",
+      "metadata": {
+        "conversation_id": "737782761793060864",
+        "created_at": "2016-05-31T23:08:12Z",
+        "lang": "",
+        "likes": 139,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 0,
+          "like_count": 139,
+          "quote_count": 0,
+          "reply_count": 27,
+          "retweet_count": 110
+        },
+        "tweet_id": 737782761793060900,
+        "user_id": "4065725475",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "737778443639627777",
+      "source": "twitter",
+      "content": "I love Donald J. Trump! He called reporter Tom Llamas a sleaze right to his face.👍 Made my day!!\n#MAGA",
+      "metadata": {
+        "conversation_id": "737778443639627777",
+        "created_at": "2016-05-31T22:51:02Z",
+        "lang": "",
+        "likes": 197,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 0,
+          "like_count": 197,
+          "quote_count": 0,
+          "reply_count": 22,
+          "retweet_count": 100
+        },
+        "tweet_id": 737778443639627800,
+        "user_id": "2510362008",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "737679827818319872",
+      "source": "twitter",
+      "content": "Trump calls out sleazy reporter from ABC at 38 min in. IS THAT TOM LLAMAS?  I THINK SO!  http://bit.ly/22vPgZj",
+      "metadata": {
+        "conversation_id": "737679827818319872",
+        "created_at": "2016-05-31T16:19:11Z",
+        "lang": "",
+        "likes": 823,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 0,
+          "like_count": 823,
+          "quote_count": 0,
+          "reply_count": 79,
+          "retweet_count": 303
+        },
+        "tweet_id": 737679827818319900,
+        "user_id": "196168350",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "735194319368245249",
+      "source": "twitter",
+      "content": "Bad news for Tom Llamas: Bill Cosby ordered to stand trial for rape.  In the end rape victims ARE believed.",
+      "metadata": {
+        "conversation_id": "735194319368245249",
+        "created_at": "2016-05-24T19:42:39Z",
+        "lang": "",
+        "likes": 858,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 0,
+          "like_count": 858,
+          "quote_count": 0,
+          "reply_count": 128,
+          "retweet_count": 243
+        },
+        "tweet_id": 735194319368245200,
+        "user_id": "196168350",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "733486570364227584",
+      "source": "twitter",
+      "content": "Explanation #4: @TomLlamasABC has never heard of Juanita Broaddrick until tonight. Tom Llamas: Broaddrick rape claim\"discredited.\"",
+      "metadata": {
+        "conversation_id": "733486570364227584",
+        "created_at": "2016-05-20T02:36:40Z",
+        "lang": "",
+        "likes": 223,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 0,
+          "like_count": 223,
+          "quote_count": 0,
+          "reply_count": 29,
+          "retweet_count": 75
+        },
+        "tweet_id": 733486570364227600,
+        "user_id": "196168350",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "733483407011762177",
+      "source": "twitter",
+      "content": "ABC Tom Llamas: Juanita Broaddrick rape claim “discredited.” NBC News believed her in heavily investigated report. When was it discredited?",
+      "metadata": {
+        "conversation_id": "733483407011762177",
+        "created_at": "2016-05-20T02:24:06Z",
+        "lang": "",
+        "likes": 755,
+        "possibly_sensitive": false,
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 0,
+          "like_count": 755,
+          "quote_count": 0,
+          "reply_count": 43,
+          "retweet_count": 294
+        },
+        "tweet_id": 733483407011762200,
+        "user_id": "196168350",
+        "username": ""
+      },
+      "updated_at": "0001-01-01T00:00:00Z"
+    }
+  ]
+}
