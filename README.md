@@ -217,17 +217,50 @@ If you encounter rate limiting:
 
 **Note**: The batch size is automatically optimized, so you don't need to manually adjust it. Simply set `AMOUNT` to your desired total number of tweets.
 
-## Building
+## fetch-trends: Get trends and collect tweets per trend
 
-To build a standalone binary:
+A second tool, `fetch-trends`, uses the gopher client to **get current Twitter trends**, then for **each trend** collects up to 10,000 tweets with **at least 100 likes** and saves them under `data/`.
+
+### How to run fetch-trends
+
+Same `.env` as fetch-tweets (at least `GOPHER_CLIENT_TOKEN`). Optional: `AMOUNT` (default 10000 tweets per trend).
 
 ```bash
+go run ./cmd/fetch-trends
+```
+
+Or build and run:
+
+```bash
+go build -o fetch-trends ./cmd/fetch-trends
+./fetch-trends
+```
+
+### What it does
+
+1. **Get trends** – Calls the gopher API with a “get trends” job (`CapGetTrends`), waits for completion, and reads the list of trending topic strings.
+2. **For each trend** – Builds a query `"{trend}" min_faves:100` and fetches tweets the same way as fetch-tweets (pagination, batch size 100).
+3. **Output** – One JSON file per trend in `data/`, e.g. `data/trend_bitcoin_10000.json`, with the same structure as fetch-tweets (metadata, `collected_at`, etc.).
+
+So you get “trends → 10k tweets (min 100 likes) per trend” in one run.
+
+## Building
+
+To build standalone binaries:
+
+```bash
+# Tweet fetcher (single query)
 go build -o fetch-tweets ./cmd/fetch-tweets
+
+# Trend-based fetcher (trends + 10k tweets per trend with min 100 likes)
+go build -o fetch-trends ./cmd/fetch-trends
 ```
 
 Then run:
 ```bash
 ./fetch-tweets
+# or
+./fetch-trends
 ```
 
 ## License
