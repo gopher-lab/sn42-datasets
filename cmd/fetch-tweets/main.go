@@ -99,13 +99,20 @@ func main() {
 		// Make API request (synchronous - waits for completion)
 		results, err := c.SearchTwitterWithArgs(args)
 		if err != nil {
-			log.Printf("Error fetching tweets: %v", err)
+			fmt.Fprintf(os.Stderr, "\n❌ Error fetching tweets: %v\n", err)
 			break
 		}
 
 		// Check if we got any results
 		if len(results) == 0 {
-			fmt.Println("No more results available.")
+			if len(allTweets) == 0 {
+				fmt.Fprintf(os.Stderr, "\n⚠️ API returned 0 results on first request. Possible causes:\n")
+				fmt.Fprintf(os.Stderr, "  - No tweets match query: %q\n", baseQuery)
+				fmt.Fprintf(os.Stderr, "  - API rate limit or authentication issue (check GOPHER_CLIENT_TOKEN)\n")
+				fmt.Fprintf(os.Stderr, "  - Query format may not be supported by the API\n")
+			} else {
+				fmt.Println("No more results available.")
+			}
 			break
 		}
 
@@ -121,7 +128,7 @@ func main() {
 		// Get the last tweet ID for pagination
 		lastTweetID, err := getLastTweetID(results)
 		if err != nil {
-			log.Printf("Error extracting last tweet ID: %v", err)
+			fmt.Fprintf(os.Stderr, "\n❌ Error extracting last tweet ID: %v\n", err)
 			break
 		}
 
